@@ -6,6 +6,9 @@ class listProdPage {
     get featured() {
         return $("div[id='block_frame_featured_1769'] span[class='maintext']")
     }
+    get featured() {
+        return $("div[id='block_frame_featured_1769'] span[class='maintext']")
+    }
 
     get creamAddToBasket() {
         return $("//section[@id='latest']//div[3]//div[2]//div[3]//a[1]//i[1]")
