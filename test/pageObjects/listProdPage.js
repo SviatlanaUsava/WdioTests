@@ -6,9 +6,6 @@ class listProdPage {
     get featured() {
         return $("div[id='block_frame_featured_1769'] span[class='maintext']")
     }
-    get featured() {
-        return $("div[id='block_frame_featured_1769'] span[class='maintext']")
-    }
 
     get creamAddToBasket() {
         return $("//section[@id='latest']//div[3]//div[2]//div[3]//a[1]//i[1]")
@@ -23,7 +20,7 @@ class listProdPage {
 
     }
 
-    async pageRefreshTillSelectorFound() {
+    async pageRefreshTillSelectorFound() {//not working
         for (let i = 0; i < 10; i++) {
             if (await $(featured).isExisting()) {
                 console.log('first stable table element has appeared')
