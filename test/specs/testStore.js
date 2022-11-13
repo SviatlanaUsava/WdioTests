@@ -34,7 +34,7 @@ describe('purchase order', () => {
         await userAccountCr.firstName.setValue('Sally'); https://automationteststore.com/index.php?rt=account/create
         await browser.pause(2500);
         await userAccountCr.lastName.setValue("Sparrow");
-        await userAccountCr.email.setValue('lulu37433@gmail.com');
+        await userAccountCr.email.setValue('l56u897433@gmail.com');
         console.log(await userAccountCr.email.getValue());
         await userAccountCr.tel.setValue("00000000");
         await userAccountCr.company.setValue("new");
@@ -47,7 +47,7 @@ describe('purchase order', () => {
         await userAccountCr.region.selectByVisibleText('Lodzkie');
         await browser.pause(3000);
         await userAccountCr.zip.setValue("6789");
-        await userAccountCr.loginName.setValue("Samuel Gamgy");
+        await userAccountCr.loginName.setValue("SamueltyGamgy");
         await userAccountCr.password.setValue("tytijmn5");
         await userAccountCr.paswConfirm.setValue("tytijmn5");
         await userAccountCr.checkBtn.click();
@@ -57,7 +57,7 @@ describe('purchase order', () => {
         //checkout page
         await expect(checkoutPage.verifText).toHaveText('CHECKOUT CONFIRMATION');
 
-        console.log(await verifText.getText())
+        //console.log(await verifText.getText())
     })
 })
 
